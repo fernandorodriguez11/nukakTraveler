@@ -1,0 +1,255 @@
+
+.logo
+    width: 100%
+    height: auto
+
+    img
+        width: 85%
+        height: auto
+        padding-left: 10%
+        padding-top: 25%
+    @media screen and  (min-width : 320px) and (max-width : 480px)
+        height: auto
+        padding: 0
+        img 
+            width: 90%
+            height: auto
+            padding-left: 10%
+            padding-top: 10%
+    
+    @media screen and  (min-width : 481px) and (max-width : 767px)
+        
+        height: auto
+        padding: 0
+        img 
+            width: 100%
+            height: auto
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+        width: 100%
+        height: auto
+        padding: 0
+        a
+            img 
+                width: 100%
+                height: auto
+
+.texto_informativo
+    margin-top: 15%
+    width: 80%
+    height: auto
+
+    p
+        padding-top: 10%
+        padding-left: 10%
+        font-family: 'you-gothic-light'
+        font-size: 19px
+        font-weight: bold
+        color: grey
+    
+    @media screen and  (min-width : 320px) and (max-width : 480px)
+        width: 100%
+        margin: 0
+        height: auto
+        p 
+            padding: 0 4%
+            font-size: 18px
+    @media screen and  (min-width : 481px) and (max-width : 767px)
+        width: 92%
+        margin: 0
+        margin-bottom: 8%
+        margin-left: 6%
+        height: auto
+        p 
+            padding: 0
+            font-size: 19px
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+        width: 100%
+        height: auto
+        margin: 0
+        margin-bottom: 15%
+        p 
+            padding: 0 7%
+            font-size: 20px
+
+    @media only screen and (min-device-width : 1025px) and (max-device-width : 1524px)
+        width: 100%
+        height: auto
+        margin: 0
+        margin-bottom: 15%
+        p 
+            padding: 0 7%
+            font-size: 20px
+    
+    @media only screen and (min-device-width : 1525px) and (max-device-width : 1900px)
+        width: 100%
+        height: auto
+        margin: 0
+        margin-bottom: 10%
+.nav
+    height: auto
+    width: 80%
+    margin-top: 8%
+    
+    &__boton-menu
+        display: none
+
+        @media screen and  (min-width : 320px) and (max-width : 480px)
+            display: block
+            width: 92%
+            margin: 0 4%
+            text-align: center
+            border-bottom: 1px solid #E6E6E6 
+            padding-bottom: 4%
+            font-size: 22px
+            color: grey
+            margin-bottom: 10%
+            font-family: 'you-gothic-light'
+
+            &__flechita
+                font-size: 18px
+                font-family: 'you-gothic-light'
+        
+        @media screen and  (min-width : 481px) and (max-width : 767px)
+            display: block
+            width: 83%
+            margin: 0 6%
+            text-align: center
+            border-bottom: 1px solid #E6E6E6 
+            padding-bottom: 4%
+            font-size: 19px
+            color: grey
+            margin-bottom: 10%
+            &__flechita
+                font-size: 15px
+    ul
+        list-style: none
+        font-family: 'you-gothic-light'
+        font-size: 20px
+        color: grey
+        padding-left: 10%
+        li
+            border-top: 2px solid #E6E6E6 
+            padding: 5% 0
+            font-weight: 900
+
+            a
+                text-decoration: none
+                color: grey
+
+        .descubre:hover
+            cursor: pointer
+            font-size: 20px
+            color: black
+
+    @media screen and  (min-width : 320px) and (max-width : 480px)
+        width: 100%
+        height: auto
+        margin-top: 12%
+
+        ul 
+            display: none
+            padding: 0 4%
+
+    @media screen and (min-width : 481px) and (max-width : 767px)
+        width: 100%
+        height: auto
+        ul
+            display: none
+            width: 95%
+            padding: 0 6%
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+        width: 100%
+        height: auto
+        margin: 0
+        margin: 25% 0
+        ul 
+            font-size: 22px
+            padding: 0 7%
+
+            .descubre:hover
+                font-size: 24px
+.footer
+    width: 80%
+    height: auto
+    
+    &__instagram
+        width: 20%
+        margin-left: 5%
+        text-align: center
+        a
+            img 
+                width: 40%
+                height: auto
+                &:hover
+                    cursor: pointer
+                    width: 45%
+                    transition: 0.5s all
+                    
+    @media screen and  (min-width : 320px) and (max-width : 480px)
+        width: 100%
+        height: auto
+
+        &__instagram
+            width: 20%
+            margin: 0 0
+            a  
+                img 
+                    width: 40%
+                     
+                    &:hover
+                        cursor: pointer
+                        width: 45%
+                        transition: 0.5s all
+    
+    @media screen and (min-width : 481px) and (max-width : 767px)
+        width: 100%
+        height: auto
+
+        &__instagram
+            width: 20%
+            margin: 0 0
+            a  
+                img 
+                    width: 30%
+                     
+                    &:hover
+                        cursor: pointer
+                        width: 35%
+                        transition: 0.5s all
+                        
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+        width: 100%
+        height: auto
+
+        &__instagram
+            width: 30%
+            margin: 0 0
+
+            a  
+                img 
+                    width: 40%
+                     
+                    &:hover
+                        cursor: pointer
+                        width: 52%
+                        transition: 0.5s all
+
+    @media only screen and (min-device-width : 1025px) and (max-device-width : 1524px)
+        width: 100%
+        height: auto
+
+        &__instagram
+            width: 30%
+            margin: 0 0
+
+            a  
+                img 
+                    width: 32%
+
+                    &:hover
+                        cursor: pointer
+                        width: 38%
+                        transition: 0.5s all

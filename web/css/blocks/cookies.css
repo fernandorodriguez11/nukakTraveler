@@ -1,0 +1,298 @@
+.show__cookies {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  background-color: white;
+  z-index: 3;
+  -webkit-box-shadow: 0 -1px 10px 0 rgba(172, 171, 171, 0.3);
+          box-shadow: 0 -1px 10px 0 rgba(172, 171, 171, 0.3);
+}
+
+.show__cookies p {
+  font-size: 16px;
+  font-family: 'you-gothic-light';
+}
+
+.show__cookies p:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .show__cookies p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .show__cookies p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .show__cookies p {
+    font-size: 12px;
+  }
+}
+
+.cookies {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  z-index: 3;
+  -webkit-box-shadow: 0 -1px 10px 0 rgba(172, 171, 171, 0.3);
+          box-shadow: 0 -1px 10px 0 rgba(172, 171, 171, 0.3);
+}
+
+.cookies__informacion {
+  width: 60%;
+}
+
+.cookies__informacion p {
+  width: 95%;
+  padding-left: 2%;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.cookies__confirmacion {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cookies__confirmacion__aceptar {
+  width: 30%;
+}
+
+.cookies__confirmacion__aceptar button {
+  font-family: 'you-gothic-light';
+  width: 85%;
+  background-color: #EAE8E8;
+  color: #444E52;
+  padding: 3%;
+  border: 0;
+  font-size: 18px;
+}
+
+.cookies__confirmacion__aceptar button:hover {
+  cursor: pointer;
+}
+
+.cookies__confirmacion__rechazar {
+  width: 50%;
+}
+
+.cookies__confirmacion__rechazar button {
+  font-family: 'you-gothic-light';
+  width: 100%;
+  background-color: #EC6363;
+  color: #4D4D4D;
+  padding: 2%;
+  border: 0;
+  font-size: 18px;
+}
+
+.cookies__confirmacion__rechazar button:hover {
+  cursor: pointer;
+}
+
+.cookies__confirmacion__leerMas {
+  width: 20%;
+}
+
+.cookies__confirmacion__leerMas a {
+  font-family: 'you-gothic-light';
+  padding-left: 8%;
+  font-size: 18px;
+  color: #444E52;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .cookies {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cookies__informacion {
+    width: 100%;
+  }
+  .cookies__informacion p {
+    width: 92%;
+    padding-left: 4%;
+    font-size: 16px;
+  }
+  .cookies__confirmacion {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cookies__confirmacion__aceptar {
+    width: 50%;
+  }
+  .cookies__confirmacion__aceptar button {
+    width: 90%;
+    padding: 3%;
+    font-size: 14px;
+  }
+  .cookies__confirmacion__rechazar {
+    width: 50%;
+  }
+  .cookies__confirmacion__rechazar button {
+    width: 100%;
+    padding: 3%;
+    font-size: 14px;
+  }
+  .cookies__confirmacion__leerMas {
+    margin: 2% 0;
+    width: 100%;
+    text-align: center;
+  }
+  .cookies__confirmacion__leerMas a {
+    padding-left: 3%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .cookies {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cookies__informacion {
+    width: 100%;
+  }
+  .cookies__informacion p {
+    width: 92%;
+    padding-left: 4%;
+    font-size: 16px;
+  }
+  .cookies__confirmacion {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  .cookies__confirmacion__aceptar {
+    width: 42.5%;
+  }
+  .cookies__confirmacion__aceptar button {
+    margin-left: 2%;
+    width: 90%;
+    padding: 3%;
+    font-size: 14px;
+  }
+  .cookies__confirmacion__rechazar {
+    width: 42.5%;
+  }
+  .cookies__confirmacion__rechazar button {
+    width: 100%;
+    padding: 3%;
+    font-size: 14px;
+  }
+  .cookies__confirmacion__leerMas {
+    width: 15%;
+    text-align: center;
+  }
+  .cookies__confirmacion__leerMas a {
+    padding-left: 3%;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .cookies {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cookies__informacion {
+    width: 100%;
+  }
+  .cookies__informacion p {
+    width: 92%;
+    padding-left: 4%;
+    font-size: 16px;
+  }
+  .cookies__confirmacion {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  .cookies__confirmacion__aceptar {
+    width: 45%;
+  }
+  .cookies__confirmacion__aceptar button {
+    margin-left: 2%;
+    width: 90%;
+    padding: 3%;
+    font-size: 14px;
+  }
+  .cookies__confirmacion__rechazar {
+    width: 45%;
+  }
+  .cookies__confirmacion__rechazar button {
+    width: 100%;
+    padding: 3%;
+    font-size: 14px;
+  }
+  .cookies__confirmacion__leerMas {
+    width: 10%;
+    text-align: center;
+  }
+  .cookies__confirmacion__leerMas a {
+    padding-left: 3%;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1400px) {
+  .cookies__informacion {
+    width: 40%;
+  }
+  .cookies__informacion p {
+    width: 92%;
+    padding-left: 4%;
+    font-size: 16px;
+  }
+  .cookies__confirmacion {
+    width: 60%;
+  }
+  .cookies__confirmacion__aceptar button {
+    font-size: 15px;
+  }
+  .cookies__confirmacion__rechazar button {
+    font-size: 15px;
+  }
+  .cookies__confirmacion__leerMas a {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-device-width: 1401px) and (max-device-width: 1900px) {
+  .cookies__informacion {
+    width: 45%;
+  }
+  .cookies__informacion p {
+    width: 92%;
+    padding-left: 4%;
+    font-size: 16px;
+  }
+  .cookies__confirmacion {
+    width: 65%;
+  }
+  .cookies__confirmacion__aceptar button {
+    font-size: 16px;
+  }
+  .cookies__confirmacion__rechazar button {
+    font-size: 16px;
+  }
+  .cookies__confirmacion__leerMas a {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=cookies.css.map */

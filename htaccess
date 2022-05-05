@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
+
+RewriteRule ^([a-zA-Z0-9_]*)$ web/index.php?comando=$1
+RewriteRule ^([a-zA-Z0-9_]*)/([0-9]+)$ web/index.php?comando=$1&idPosts=$2
+RewriteRule ^([a-z_A-Z0-9_]*)/([a-zA-Z0-9_-]+)/([0-9]+)$ web/index.php?comando=$1&titulo=$2&idPosts=$3

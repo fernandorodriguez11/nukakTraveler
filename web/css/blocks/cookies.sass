@@ -1,0 +1,214 @@
+.show__cookies
+    width: 100%
+    position: fixed
+    top: 0
+    text-align: center
+    background-color: white
+    z-index: 3
+    box-shadow: 0 -1px 10px 0 rgba(172, 171, 171, 0.3)
+
+    p
+        font-size: 16px
+        font-family: 'you-gothic-light'
+
+        &:hover
+            cursor: pointer
+
+    @media screen and  (min-width : 320px) and (max-width : 480px)
+        p
+            font-size: 10px
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+        p
+            font-size: 13px
+
+    @media screen and  (min-width : 481px) and (max-width : 767px)
+        p
+            font-size: 12px
+.cookies
+    width: 100%
+    position: fixed
+    top: 0
+    display: flex
+    background-color: white
+    z-index: 3
+    box-shadow: 0 -1px 10px 0 rgba(172, 171, 171, 0.3)
+
+    &__informacion
+        width: 60%
+        p 
+            width: 95%
+            padding-left: 2%
+            text-align: justify
+            font-size: 18px
+
+    &__confirmacion
+        width: 40%
+        display: flex
+        align-items: center
+
+        &__aceptar
+            width: 30%
+            button
+                font-family: 'you-gothic-light'
+                width: 85%
+                background-color: #EAE8E8
+                color: #444E52
+                padding: 3%
+                border: 0
+                font-size: 18px
+                &:hover
+                    cursor: pointer
+        &__rechazar
+            width: 50%
+            button
+                font-family: 'you-gothic-light'
+                width: 100%
+                background-color: #EC6363
+                color: #4D4D4D
+                padding: 2%
+                border: 0
+                font-size: 18px
+                &:hover
+                    cursor: pointer
+        &__leerMas
+            width: 20%
+            a 
+                font-family: 'you-gothic-light'
+                padding-left: 8%
+                font-size: 18px
+                color: #444E52
+
+    @media screen and  (min-width : 320px) and (max-width : 480px)
+        flex-wrap: wrap
+        &__informacion
+            width: 100%
+            p 
+                width: 92%
+                padding-left: 4%
+                font-size: 16px
+        &__confirmacion
+            width: 100%
+            flex-wrap: wrap
+            &__aceptar
+                width: 50%
+                button
+                    width: 90%
+                    padding: 3%
+                    font-size: 14px
+            &__rechazar
+                width: 50%
+                button
+                    width: 100%
+                    padding: 3%
+                    font-size: 14px
+            &__leerMas
+                margin: 2% 0
+                width: 100%
+                text-align: center
+                a 
+                    padding-left: 3%
+                    font-size: 16px
+    @media screen and  (min-width : 481px) and (max-width : 767px)
+        flex-wrap: wrap
+        &__informacion
+            width: 100%
+            p 
+                width: 92%
+                padding-left: 4%
+                font-size: 16px
+
+        &__confirmacion
+            width: 100%
+            margin-bottom: 2%
+            &__aceptar
+                width: 42.5%
+                button
+                    margin-left: 2%
+                    width: 90%
+                    padding: 3%
+                    font-size: 14px
+            &__rechazar
+                width: 42.5%
+                button
+                    width: 100%
+                    padding: 3%
+                    font-size: 14px
+            &__leerMas
+                width: 15%
+                text-align: center
+                a 
+                    padding-left: 3%
+                    font-size: 16px
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+        flex-wrap: wrap
+        &__informacion
+            width: 100%
+            p 
+                width: 92%
+                padding-left: 4%
+                font-size: 16px
+
+        &__confirmacion
+            width: 100%
+            margin-bottom: 2%
+            &__aceptar
+                width: 45%
+                button
+                    margin-left: 2%
+                    width: 90%
+                    padding: 3%
+                    font-size: 14px
+            &__rechazar
+                width: 45%
+                button
+                    width: 100%
+                    padding: 3%
+                    font-size: 14px
+            &__leerMas
+                width: 10%
+                text-align: center
+                a 
+                    padding-left: 3%
+                    font-size: 16px
+
+    @media only screen and (min-device-width : 1025px) and (max-device-width : 1400px)
+        &__informacion
+            width: 40%
+            p 
+                width: 92%
+                padding-left: 4%
+                font-size: 16px
+        &__confirmacion
+            width: 60%
+            &__aceptar
+                
+                button
+                    font-size: 15px
+            &__rechazar
+                button
+                    font-size: 15px
+            &__leerMas
+                
+                a
+                    font-size: 15px
+
+    @media only screen and (min-device-width : 1401px) and (max-device-width : 1900px)
+        &__informacion
+            width: 45%
+            p 
+                width: 92%
+                padding-left: 4%
+                font-size: 16px
+        &__confirmacion
+            width: 65%
+            &__aceptar
+                
+                button
+                    font-size: 16px
+            &__rechazar
+                button
+                    font-size: 16px
+            &__leerMas
+                
+                a
+                    font-size: 16px
